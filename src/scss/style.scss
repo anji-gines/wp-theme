@@ -1,0 +1,9 @@
+@use "./config/_reset.scss";
+
+.a {
+  color: red;
+
+  .b {
+    color: blue;
+  }
+}
