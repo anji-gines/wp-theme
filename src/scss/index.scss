@@ -1,9 +1,4 @@
 @use './config/_reset.scss';
-
-.a {
-  color: red;
-
-  .b {
-    color: blue;
-  }
-}
+@use './config/_base.scss';
+@use './layout';
+@use './project';
