@@ -1,0 +1,38 @@
+@use '../../config/' as *;
+
+.p-topProjects__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-topProjects__headTitle {
+  position: relative;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: bold;
+  padding-left: 22px;
+  border-left: 2px solid $color-base-1000;
+  font-family: $font-secondary;
+}
+
+.p-topProjects__headToggle {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.p-topProjects__headToggleButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: $color-base-600;
+  }
+}

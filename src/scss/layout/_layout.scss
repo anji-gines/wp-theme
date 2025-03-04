@@ -1,3 +1,19 @@
+@use '../config' as *;
+
 .l-layout {
+  position: relative;
   padding-top: 96px;
+}
+
+.l-layout__topBg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  @include bp($md) {
+    top: -40px;
+    right: 85px;
+    width: 831px;
+    height: 544px;
+  }
 }

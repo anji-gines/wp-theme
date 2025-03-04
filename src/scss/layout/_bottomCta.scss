@@ -1,0 +1,90 @@
+@use '../config' as *;
+
+.l-bottomCta {
+  background-color: $color-base-100;
+  border-top: 1px solid $color-base-100;
+}
+
+.l-bottomCta__contents {
+  display: flex;
+  justify-content: center;
+}
+
+.l-bottomCta__item {
+  position: relative;
+  width: calc(100% / 3);
+  background: $color-white;
+
+  &:not(:first-of-type) {
+    border-left: 1px solid $color-base-100;
+  }
+
+  &:hover {
+    .l-bottomCta__image img {
+      transform: scale(1.1);
+    }
+
+    .l-bottomCta__title {
+      &::after {
+        transform: translateY(-50%) translateX(8px);
+      }
+    }
+  }
+}
+
+.l-bottomCta__link {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.l-bottomCta__content {
+  padding: 24px;
+}
+
+.l-bottomCta__title {
+  position: relative;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  padding-right: 40px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/common/icon-arrow-right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
+    transition: transform 1s $ease-out-circ;
+  }
+}
+
+.l-bottomCta__text {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.l-bottomCta__image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 55.5%;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s $ease-out-circ;
+  }
+}

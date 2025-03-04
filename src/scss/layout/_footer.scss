@@ -1,0 +1,10 @@
+@use '../config' as *;
+
+.l-footer {
+  padding: 64px 0;
+  background-color: $color-base-1000;
+}
+
+.l-footer__logo {
+  filter: brightness(0) invert(1);
+}

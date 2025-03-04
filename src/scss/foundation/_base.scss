@@ -1,4 +1,11 @@
+@use '../config' as *;
+
 body {
+  font-size: 16px;
   line-height: 1.8;
-  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0.02em;
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-base-1000;
+  background: $color-white;
 }

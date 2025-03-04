@@ -1,5 +1,7 @@
+@use '../../config/' as *;
+
 .p-topHero {
-  padding: 64px 0;
+  padding-top: 64px;
 }
 
 .p-topHero__description {
@@ -9,4 +11,43 @@
   span {
     display: inline-block;
   }
+}
+
+.p-topHero__achievement {
+  margin-top: 24px;
+}
+
+.p-topHero__achievementList {
+  display: flex;
+  gap: 8px;
+}
+
+.p-topHero__achievementItem {
+  font-size: 12px;
+  line-height: 1;
+
+  span {
+    display: inline-block;
+    padding-left: 3px;
+    font-size: 13px;
+    font-family: $font-secondary;
+  }
+}
+
+.p-topHero__achievementSince {
+  margin-top: 8px;
+  font-size: 10px;
+  line-height: 1;
+  font-family: $font-secondary;
+}
+
+.p-topHero__cta {
+  margin-top: 40px;
+  display: flex;
+  gap: 8px;
+}
+
+.p-topHero__ctaButton {
+  width: 252px;
+  max-width: 100%;
 }
