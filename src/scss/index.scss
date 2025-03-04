@@ -1,4 +1,5 @@
-@use './config/_reset.scss';
-@use './config/_base.scss';
-@use './layout';
-@use './project';
+@use 'foundation';
+@use 'layout';
+@use 'object/utility';
+@use 'object/component';
+@use 'object/project';

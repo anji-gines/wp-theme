@@ -5,11 +5,19 @@
   <?php get_header(); ?>
 </head>
 
-<body>
-  <div class="h-screen flex items-center justify-center">
-    <h1 class="text-center text-3xl">Welcome to <span class="text-blue-400">Front Pageaaa</span></h1>
+<body class="p-top">
+  <?php
+  ob_start();
+  ?>
+
+  <div>
+    <?php get_template_part('template-parts/projects/topHero'); ?>
   </div>
 
+
+  <?php
+  $content = ob_get_clean();
+  require locate_template('template-parts/layouts/layout.php'); ?>
   <?php get_footer(); ?>
 </body>
 

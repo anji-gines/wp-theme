@@ -3,7 +3,7 @@
     <div class="l-container">
       <div>
         <div>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/title_result.png" alt="topHero_img" width="486" height="58">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-result.svg" alt="RESULT DRIVEN" width="486" height="58">
         </div>
         <p class="p-topHero__description">
           <span>事業成長のために、</span><span>あらゆるプロが集いました。</span><br />

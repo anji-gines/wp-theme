@@ -7,7 +7,7 @@ module.exports = {
   mode: 'development',
   devtool: 'source-map',
   entry: {
-    main: './src/index.ts',
+    main: './src/index.tsx',
   },
   output: {
     path: path.resolve(__dirname, 'assets'),

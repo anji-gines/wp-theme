@@ -27,7 +27,7 @@
     </nav>
     <div class="l-header__logo">
       <a href="<?php echo home_url(); ?>">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo_mo.png" alt="logo" width="204">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-mo.svg" alt="THE MOLTS" width="204">
       </a>
     </div>
   </div>

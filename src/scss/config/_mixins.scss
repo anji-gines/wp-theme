@@ -1,0 +1,52 @@
+// 🎯 ブレイクポイント定義（min-width）
+// 💡 将来の拡張用に `sm`, `xl` もプレースホルダーとして用意
+// 🎯 ブレイクポイント定義（統一）
+$sp: 879px;
+$md: 1023px;
+$lg: 1024px;
+$xl: 1440px;
+
+// 使用するときに `@include bp($md) {}` で統一
+@mixin bp($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+// 使用例
+/*
+.element {
+  color: red;
+
+  @include bp($sp) {
+    color: blue;
+  }
+
+  @include bp($md) {
+    color: green;
+  }
+
+  @include bp($lg) {
+    color: black;
+  }
+}
+*/
+
+// 使用例
+/*
+.element {
+  color: red;
+
+  @include sp {
+    color: blue;
+  }
+
+  @include md {
+    color: green;
+  }
+
+  @include lg {
+    color: black;
+  }
+}
+*/
