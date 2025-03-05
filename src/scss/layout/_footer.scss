@@ -5,6 +5,76 @@
   background-color: $color-base-1000;
 }
 
+.l-footer__top {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 48px;
+}
+
 .l-footer__logo {
   filter: brightness(0) invert(1);
+}
+
+.l-footer__nav {
+  flex: 1;
+}
+
+.l-footer__navList {
+  display: flex;
+  gap: 48px;
+}
+
+.l-footer__navItem {
+  a {
+    color: $color-white;
+    font-size: 15px;
+    line-height: 1;
+    padding: 6px 0;
+  }
+}
+
+.l-footer__bottom {
+  display: flex;
+  margin-top: 48px;
+}
+
+.l-footer__privacy {
+  flex: 1;
+}
+
+.l-footer__privacyItem {
+  line-height: 1;
+  a {
+    color: $color-white;
+    font-size: 12px;
+    line-height: 1;
+    padding: 6px 0;
+  }
+}
+
+.l-footer__copyright {
+  margin-top: 16px;
+  color: $color-base-600;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.l-footer__sns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.l-footer__snsItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s $ease-out-circ;
+
+  &:hover {
+    background: $color-base-800;
+  }
 }

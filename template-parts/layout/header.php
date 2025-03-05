@@ -3,25 +3,25 @@
     <nav class="l-header__nav">
       <ul class="l-header__navList">
         <li class="l-header__navItem">
-          <a href="">はじめまして</a>
+          <a href=""><span>はじめまして</span></a>
         </li>
         <li class="l-header__navItem <?php echo is_front_page() ? 'is-current' : ''; ?>">
-          <a href="">実績</a>
+          <a href=""><span>実績</span></a>
         </li>
         <li class="l-header__navItem <?php echo is_page('services') ? 'is-current' : ''; ?>">
-          <a href="">サービス</a>
+          <a href=""><span>サービス</span></a>
         </li>
         <li class="l-header__navItem">
-          <a href="">メンバー</a>
+          <a href=""><span>メンバー</span></a>
         </li>
         <li class="l-header__navItem">
-          <a href="">採用情報</a>
+          <a href=""><span>採用情報</span></a>
         </li>
         <li class="l-header__navItem">
-          <a href="">会社情報</a>
+          <a href=""><span>会社情報</span></a>
         </li>
         <li class="l-header__navItem">
-          <a href="">NOTE</a>
+          <a href=""><span>NOTE</span></a>
         </li>
       </ul>
     </nav>
